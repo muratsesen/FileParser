@@ -9,7 +9,7 @@ namespace FileParserv2.Data
 {
     public static class MySqlDataService
     {
-        private static string ConnectionString = "Server=195.155.134.251;Port=3306; Database=samet; Uid=samet; Pwd=Samet2021!;";
+        private static string ConnectionString = "Server=;Port=3306; Database=; Uid=; Pwd=!;";
         public static void InsertProximation(string thisDeviceName, string targetDeviceName, DateTime timestamp, int signalLevel)
         {
             using (MySqlConnection conn = new MySqlConnection(ConnectionString))
