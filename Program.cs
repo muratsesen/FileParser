@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using FileParserv2.Utility;
 
 namespace FileParserv2
 {
@@ -6,8 +8,12 @@ namespace FileParserv2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("------- FILE PARSER - SAMET --------\n\r \n\r    !! LÜTFEN KAPATMAYIN!!");
             Parser parser = new Parser();
-            parser.Parse();
+            while(true){
+                parser.Parse();
+            Thread.Sleep(550);
+            }
         }
     }
 }
