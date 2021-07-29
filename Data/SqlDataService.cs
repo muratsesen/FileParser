@@ -9,7 +9,7 @@ namespace FileParserv2.Data
 {
     public static class SqlDataService
     {
-        private static string ConnectionString = "Data Source =195.155.134.251\\MSSQLSERVER2012; Initial Catalog=ICSamet; uid=sa; password=4dnNzT8!;";
+        private static string ConnectionString = "Data Source =\\MSSQLSERVER2012; Initial Catalog=; uid=sa; password=;";
         public static void InsertProximation(string thisDeviceName, string targetDeviceName, DateTime timestamp, int signalLevel) 
         {
             SqlConnection conn = new SqlConnection(ConnectionString);
